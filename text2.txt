@@ -1,4 +1,7 @@
 This is a test file.
+
 It contains multiple lines.
+
 Like this one. 
+
 This is another line too. 

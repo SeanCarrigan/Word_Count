@@ -1,5 +1,7 @@
 import sys
 import os
+import re
+
 
 def handleFileError(filePath, error):
     if isinstance(error, FileNotFoundError):
@@ -36,10 +38,11 @@ def countCharacters(filePath):
             count = 0
             for line in file:
                 count += len(line)
-        return count
+            return count
 
     except (FileNotFoundError, IsADirectoryError) as e:
         handleFileError(filePath, e)
+
 
 def countWords(filePath):
     try: 
@@ -79,4 +82,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
+
+
